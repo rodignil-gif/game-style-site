@@ -4,41 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vývoj stylu her</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+        body { background-color: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0; }
+        .card { margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Vývoj stylu her</h1>
-        <p>Vítejte na webu věnovaném vývoju stylu ve videohrách. Zde najdete základy vytváření jedinečného vizuálního stylu pro vaše hry.</p>
-        <h2>Co je to styl ve hrách?</h2>
-        <p>Styl ve vývoju her zahrnuje vizuální design, barevnou paletu, typografii a celkovou atmosféru. Pomáhá vytvořit ponořující zážitek pro hráče.</p>
-        <h2>Základní principy</h2>
-        <ul>
-            <li>Vyberte barevné schéma, které odráží téma hry.</li>
-            <li>Použijte konzistentní písma a velikosti textu.</li>
-            <li>Vytvořte jedinečné assety, jako jsou sprity a pozadí.</li>
-        </ul>
-        <p>Toto je základní web na úrovni junior vývojáře. Pro složitější projekty se naučte nástroje jako Unity nebo Godot.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vývoj stylu her</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">O stylu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#principles">Principy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">Nástroje</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">Vítejte ve světě vývoje stylu her</h1>
+            <p class="lead">Objevte, jak vytvořit úžasné vizuální styly pro vaše videohry.</p>
+            <a href="#about" class="btn btn-light btn-lg">Začít</a>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <section id="about">
+            <h2>Co je to styl ve hrách?</h2>
+            <p>Styl ve vývoju her zahrnuje vizuální design, barevnou paletu, typografii, zvuky a celkovou atmosféru. Pomáhá vytvořit ponořující zážitek pro hráče a odlišit vaši hru od ostatních.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Vizuální design</h5>
+                            <p class="card-text">Grafika, animace a rozložení obrazovek.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Barevné schéma</h5>
+                            <p class="card-text">Výběr barev, které odpovídají tématu hry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Atmosféra</h5>
+                            <p class="card-text">Celkový pocit a nálada hry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="principles" class="my-5">
+            <h2>Základní principy</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Vyberte barevné schéma, které odráží téma hry.</li>
+                <li class="list-group-item">Použijte konzistentní písma a velikosti textu.</li>
+                <li class="list-group-item">Vytvořte jedinečné assety, jako jsou sprity a pozadí.</li>
+                <li class="list-group-item">Zaměřte se na uživatelské rozhraní pro lepší UX.</li>
+                <li class="list-group-item">Testujte styl s cílovým publikem.</li>
+            </ul>
+        </section>
+
+        <section id="tools">
+            <h2>Nástroje pro vývoj</h2>
+            <p>Pro složitější projekty se naučte nástroje jako Unity, Godot nebo Unreal Engine. Začněte s jednoduchými nástroji jako GIMP pro grafiku nebo Aseprite pro sprity.</p>
+            <div class="alert alert-info">
+                <strong>Lokalizace:</strong> Tento web je dostupný v češtině. Pro anglickou verzi kontaktujte vývojáře.
+            </div>
+        </section>
     </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2026 Vývoj stylu her. Vytvořeno pro junior vývojáře.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
